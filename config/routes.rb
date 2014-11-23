@@ -1,4 +1,8 @@
 Rails40Starter::Application.routes.draw do
+  namespace :cpanel do
+    resources :site_configs
+  end
+
   devise_for :users
   
   root 'front#index'

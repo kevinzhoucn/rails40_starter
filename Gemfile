@@ -65,7 +65,6 @@ gem 'cancancan'
 # 表单
 gem 'simple_form'
 
-
 group :development, :test do
   gem 'capistrano', '2.9.0', require: false
   gem 'rvm-capistrano', require: false
