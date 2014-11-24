@@ -1,4 +1,6 @@
 Rails40Starter::Application.routes.draw do
+  resources :groups
+
   namespace :cpanel do
     resources :site_configs
   end

@@ -63,7 +63,13 @@ gem 'rolify'
 gem 'cancancan'
 
 # 表单
-gem 'simple_form'
+gem 'simple_form', '3.1.0.rc2', github: 'plataformatec/simple_form'
+
+# Bootstrap
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'autoprefixer-rails'
+gem 'bootstrap_helper', '4.2.3'
 
 group :development, :test do
   gem 'capistrano', '2.9.0', require: false
@@ -72,7 +78,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'capybara'
-  gem 'api_taster'
+  # gem 'api_taster', '0.6.0'
   gem 'letter_opener'
 
   # 用于组合小图片
