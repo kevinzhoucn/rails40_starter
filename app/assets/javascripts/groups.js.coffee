@@ -5,7 +5,7 @@
 #= require_self
 window.Groups =
   init : () ->
-    $('#newGroupModal').modal('show');
+#    $('#newGroupModal').modal('show');
 
 $(document).ready ->
   if $('body').data('controller-name') in ['groups']
