@@ -7,7 +7,7 @@
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
-  <body class="<%= controller_name %>">
+  <body class="<%= controller_name %>" data-controller-name="<%= controller_name %>">
     <div class="container">
       <%= render 'common/navigation' %>
     </div>

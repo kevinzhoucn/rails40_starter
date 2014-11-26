@@ -2,5 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$ ->
-  $('#newGroupModal').modal('show');
+#= require_self
+window.Groups =
+  init : () ->
+    $('#newGroupModal').modal('show');
+
+$(document).ready ->
+  if $('body').data('controller-name') in ['groups']
+    Groups.init()
